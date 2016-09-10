@@ -1,0 +1,2 @@
+(New-Object System.Net.WebClient).DownloadFile('http://downloads.puppetlabs.com/windows/puppet-agent-1.5.3-x64.msi', 'C:\Windows\Temp\puppet-agent-1.5.3-x64.msi')
+msiexec /qn /norestart /i C:\Windows\Temp\puppet-agent-1.5.3-x64.msi
