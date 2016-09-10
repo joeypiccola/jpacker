@@ -4,4 +4,5 @@ $path = "C:\Windows\Temp\$file"
 $wc = New-Object System.Net.WebClient
 $wc.DownloadFile($url,$path)
 Invoke-Expression -Command "wusa.exe $path /quiet /norestart"
+# not the best way to ensure a successful install, but it works for now
 sleep -seconds 180
