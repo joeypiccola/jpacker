@@ -22,3 +22,4 @@ pkg
 packer_cache/
 output-virtualbox-iso/
 bins/
+*.box
