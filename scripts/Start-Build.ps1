@@ -17,7 +17,7 @@ Copy-Item 'a:\postunattend.xml' -Destination 'C:\Windows\Panther\Unattend\unatte
 
 
 
-
+<#
 $enableArgs=@{Force=$true}
 try {
  $command=Get-Command Enable-PSRemoting
@@ -38,4 +38,4 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 NetSh Advfirewall set allprofiles state off
 
-
+#>
