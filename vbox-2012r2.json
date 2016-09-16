@@ -31,7 +31,8 @@
         "./scripts/Install-NuGet.ps1",
         "./scripts/Install-Modules.ps1",
         "./scripts/Install-PuppetAgentV453.ps1",
-        "./scripts/Install-PuppetAgentV386.ps1"
+        "./scripts/Install-PuppetAgentV386.ps1",
+        "./script/Install-Chocolatey.ps1"
       ]
     }
   ],
@@ -55,9 +56,14 @@
       "type": "powershell",     
       "scripts": [
         "./scripts/Install-NuGet.ps1",
-        "./scripts/Install-Modules.ps1"
+        "./scripts/Install-Modules.ps1",
+        "./scripts/Install-Chocolatey.sp1"
       ]
-    }   
+    }  
+    ,
+    {
+      "type": "windows-restart"
+    }     
   ],
   "post-processors": [
     [{
